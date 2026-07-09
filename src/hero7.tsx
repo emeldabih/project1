@@ -1,4 +1,6 @@
-
+import person1 from './assets/person1.svg'
+import person2 from './assets/person2.svg'
+import person3 from './assets/person3.svg'
 
 export default function Hero7() {
   return (
@@ -16,55 +18,78 @@ export default function Hero7() {
           about how our communities are increasing their membership, wisdom,
           and much more.
         </p>
-      </div>
-
-     
-      <div className="grid grid-cols-1 md:grid-cols-3 gap-8 mt-12">
-
-       
-        <div className="bg-gray-100 rounded-lg shadow-md p-6 text-center hover:shadow-lg transition">
-          <h3 className="text-xl font-semibold text-gray-800">
-            Creating Streamlined Safeguarding Processes
-          </h3>
-
-          <a
-            href="#"
-            className="text-green-500 font-semibold mt-4 inline-block hover:underline"
-          >
-            Read More →
-          </a>
-        </div>
-
         
-        <div className="bg-gray-100 rounded-lg shadow-md p-6 text-center hover:shadow-lg transition">
-          <h3 className="text-xl font-semibold text-gray-800">
-            What are your safeguarding responsibilities?
-          </h3>
-
-          <a
-            href="#"
-            className="text-green-500 font-semibold mt-4 inline-block hover:underline"
-          >
-            Read More →
-          </a>
-        </div>
-
-       
-        <div className="bg-gray-100 rounded-lg shadow-md p-6 text-center hover:shadow-lg transition">
-          <h3 className="text-xl font-semibold text-gray-800">
-            Revamping the Membership Model with Triathlon Australia
-          </h3>
-
-          <a
-            href="#"
-            className="text-green-500 font-semibold mt-4 inline-block hover:underline"
-          >
-            Read More →
-          </a>
-        </div>
-
       </div>
 
+     <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-8 mt-12">
+
+  {/* first container */}
+  <div className="rounded-xl overflow-hidden shadow-lg hover:shadow-xl transition duration-300 bg-white">
+    <img
+      src={person1}
+      alt="Person"
+      className="w-full h-72 object-cover"
+    />
+
+    <div className="bg-white w-[90%] min-h-50 mx-auto -mt-14 relative rounded-xl shadow-md p-9 text-center">
+      <h3 className="text-1xl font-semibold text-gray-700">
+        Creating Streamlined Safeguarding Processes with OneRen
+      </h3>
+
+      <a
+        href="#"
+        className="mt-5 inline-block text-green-500 font-semibold hover:underline"
+      >
+        Read More →
+      </a>
+    </div>
+  </div>
+{/* second container */}
+
+  <div className="rounded-xl overflow-hidden shadow-lg hover:shadow-xl transition duration-300 bg-white">
+    <img
+      src={person2}
+      alt="Person"
+      className="w-full h-72 object-cover"
+    />
+
+    <div className="bg-white w-[90%] min-h-50 mx-auto -mt-14 relative rounded-xl shadow-md p-6 text-center">
+      <h3 className="text-1xl font-semibold text-gray-700">
+        What are your safeguarding responsibilities and how can you manage them?
+      </h3>
+
+      <a
+        href="#"
+        className="mt-5 inline-block text-green-500 font-semibold hover:underline"
+      >
+        Read More →
+      </a>
+    </div>
+  </div>
+{/* third container */}
+  
+  <div className="rounded-xl overflow-hidden shadow-lg hover:shadow-xl transition duration-300 bg-white">
+    <img
+      src={person3}
+      alt="Person"
+      className="w-full h-72 object-cover"
+    />
+
+    <div className="bg-white w-[90%] min-h-50 mx-auto -mt-14 relative rounded-xl shadow-md p-9 text-center">
+      <h3 className="text-1xl font-semibold text-gray-700">
+        Revamping the Membership Model with Triathlon Australia
+      </h3>
+
+      <a
+        href="#"
+        className="mt-5 inline-block text-green-500 font-semibold hover:underline"
+      >
+        Read More →
+      </a>
+    </div>
+  </div>
+
+</div>
     </section>
   )
 }

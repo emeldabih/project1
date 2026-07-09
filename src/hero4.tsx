@@ -1,4 +1,7 @@
-
+import num1 from './assets/num1).svg'
+import num2 from './assets/num2.svg'
+import num3  from './assets/num3).svg'
+import num4 from './assets/num4.svg'
 
 export default function Hero4() {
   return (
@@ -23,26 +26,41 @@ export default function Hero4() {
        
         <div className="grid grid-cols-2 gap-8 text-center">
 
-          <div>
-            <h3 className="text-3xl font-bold text-gray-800">2,245,341</h3>
-            <p className="text-gray-600">Members</p>
-          </div>
+          <div className="flex items-center gap-4">
+  <img src={num1} alt="Members" className="w-12 h-12" />
 
-          <div>
-            <h3 className="text-3xl font-bold text-gray-800">46,328</h3>
-            <p className="text-gray-600">Clubs</p>
-          </div>
+  <div>
+    <h3 className="text-3xl font-bold text-gray-800">2,245,341</h3>
+    <p className="text-gray-500 text-lg">Members</p>
+  </div>
+</div>
 
-          <div>
-            <h3 className="text-3xl font-bold text-gray-800">828,867</h3>
-            <p className="text-gray-600">Event Bookings</p>
-          </div>
+<div className="flex items-center gap-4">
+  <img src={num2} alt="Clubs" className="w-12 h-12" />
 
-          <div>
-            <h3 className="text-3xl font-bold text-gray-800">1,926,436</h3>
-            <p className="text-gray-600">Payments</p>
-          </div>
+  <div>
+    <h3 className="text-3xl font-bold text-gray-800">46,328</h3>
+    <p className="text-gray-500 text-lg">Clubs</p>
+  </div>
+</div>
 
+<div className="flex items-center gap-4">
+  <img src={num3} alt="Bookings" className="w-12 h-12" />
+
+  <div>
+    <h3 className="text-3xl font-bold text-gray-800">828,867</h3>
+    <p className="text-gray-500 text-lg">Event Bookings</p>
+  </div>
+</div>
+
+<div className="flex items-center gap-4">
+  <img src={num4} alt="Payments" className="w-12 h-12" />
+
+  <div>
+    <h3 className="text-3xl font-bold text-gray-800">1,926,436</h3>
+    <p className="text-gray-500 text-lg">Payments</p>
+  </div>
+</div>
         </div>
 
       </div>

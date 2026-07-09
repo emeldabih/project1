@@ -55,20 +55,20 @@ export default function Hero2() {
 
         <div className="flex flex-col items-center text-center p-6 shadow-sm rounded-lg hover:shadow-md transition">
           <img src={icon1} alt="Membership Organisations" className="w-14 mb-4" />
-          <h3 className="text-xl font-semibold">Membership</h3>
-          <h3 className="text-xl font-semibold">Organisations</h3>
+          <h3 className="text-xl font-semibold text-gray-800">Membership</h3>
+          <h3 className="text-xl font-semibold text-gray-800">Organisations</h3>
         </div>
 
         <div className="flex flex-col items-center text-center p-6 shadow-sm rounded-lg hover:shadow-md transition">
           <img src={icon2} alt="National Associations" className="w-14 mb-4" />
-          <h3 className="text-xl font-semibold">National</h3>
-          <h3 className="text-xl font-semibold">Associations</h3>
+          <h3 className="text-xl font-semibold text-gray-800">National</h3>
+          <h3 className="text-xl font-semibold text-gray-800">Associations</h3>
         </div>
 
         <div className="flex flex-col items-center text-center p-6 shadow-sm rounded-lg hover:shadow-md transition">
           <img src={icon3} alt="Clubs and Groups" className="w-14 mb-4" />
-          <h3 className="text-xl font-semibold">Clubs and</h3>
-          <h3 className="text-xl font-semibold">Groups</h3>
+          <h3 className="text-xl font-semibold text-gray-800">Clubs and</h3>
+          <h3 className="text-xl font-semibold text-gray-800">Groups</h3>
         </div>
 
       </div>

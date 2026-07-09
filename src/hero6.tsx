@@ -6,7 +6,7 @@ import logo4 from './assets/Logo (4).svg'
 import logo5 from './assets/Logo 5.svg'
 import logo6 from './assets/Logo 6.svg'
 import logo7 from './assets/Logo (7).svg'
-import pic1 from './assets/pic1.svg'
+import meetcustomer from './assets/meet customers.svg'
 
 export default function Hero6() {
   return (
@@ -16,7 +16,7 @@ export default function Hero6() {
     
         <div className="flex justify-center">
           <img
-            src={pic1}
+            src={meetcustomer}
             alt="Customer"
             className="w-64 md:w-80 lg:w-[450px] h-auto"
           />

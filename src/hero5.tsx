@@ -1,6 +1,6 @@
 
 import { Button } from './components/ui/button'
-import pic1 from './assets/pic1.svg'
+import design from './assets/design.svg'
 
 export default function Hero5() {
   return (
@@ -10,7 +10,7 @@ export default function Hero5() {
        
         <div className="flex justify-center">
           <img
-            src={pic1}
+            src={design}
             alt="Footer Design Illustration"
             className="w-64 md:w-80 lg:w-[450px] h-auto"
           />

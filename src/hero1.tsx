@@ -44,7 +44,7 @@ export default function Hero1() {
                 
         
         <div className="flex flex-col max-w-xl">
-          <h1 className="text-3xl md:text-4xl lg:text-5xl  font-bold text-gray-800 leading-tight">
+          <h1 className="text-3xl md:text-4xl lg:text-5xl  font-bold text-gray-700 leading-tight">
             Lessons and Insights
           </h1>
 
