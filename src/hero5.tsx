@@ -1,4 +1,4 @@
-import React from 'react'
+
 import { Button } from './components/ui/button'
 import pic1 from './assets/pic1.svg'
 

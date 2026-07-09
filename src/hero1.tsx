@@ -1,4 +1,4 @@
-import React from 'react'
+
 import { Button } from './components/ui/button'
 import image from './assets/image.svg'
 import { Carousel,CarouselContent,CarouselItem,CarouselNext,CarouselPrevious, } from './components/ui/carousel'
