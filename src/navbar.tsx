@@ -1,6 +1,7 @@
 import  { useState } from 'react'
 import { Button } from './components/ui/button'
 import icona from './assets/Icon (a).svg'
+import { Link } from 'react-router-dom'
 
 export default function Navbar() {
   const [isOpen, setIsOpen] = useState(false)
@@ -36,7 +37,11 @@ export default function Navbar() {
               <li><a href="#" className="hover:text-green-500">Home</a></li>
               <li><a href="#" className="hover:text-green-500">Features</a></li>
               <li><a href="#" className="hover:text-green-500">Community</a></li>
-              <li><a href="#" className="hover:text-green-500">Blog</a></li>
+              <li>
+                  <Link to="/blog" className="hover:text-green-500">
+                    Blog
+                  </Link>
+                </li> 
               <li><a href="#" className="hover:text-green-500">Pricing</a></li>
             </ul>
 

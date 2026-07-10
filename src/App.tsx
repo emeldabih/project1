@@ -1,4 +1,3 @@
-
 import './App.css'
 import Navbar from './navbar'
 import Hero1 from './hero1'
@@ -9,13 +8,22 @@ import Hero4 from './hero4'
 import Hero6 from './hero6'
 import Hero7 from './hero7'
 import Footer from './footer'
+import Batch from './batch'
+import Card from './card'
+import { Route, Routes } from 'react-router-dom'
+import Blog from './lib/pages/blog'
+
+
 
 
 function App() {
 
 
   return (
-    <>
+    <Routes>
+      <Route path='/'
+      element={
+ <>
       <Navbar/>
       <Hero1/>
       <Hero2/>
@@ -25,8 +33,20 @@ function App() {
       <Hero6/>
       <Hero7/>
       <Footer/>
-       
-    </>
+      <Batch/>
+       <Card/>
+
+      
+       </>
+      }
+      />
+
+      <Route path ="/blog"
+      element={<Blog/>}/>
+    </Routes>
+    
+   
+  
   )
 }
 
