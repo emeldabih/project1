@@ -10,7 +10,7 @@ export default function Navbar() {
 
   return (
     <>
-      <div className="bg-white shadow-sm">
+      <div className="bg-white shadow-sm fixed w-full">
         <div className="flex justify-between items-center px-6 md:px-10 lg:px-16 py-5">
 
           
@@ -25,6 +25,7 @@ export default function Navbar() {
           <Button
        
             onClick={() => setIsOpen(!isOpen)}
+            
             className="text-3xl md:hidden"
           >
             ☰
@@ -61,7 +62,10 @@ export default function Navbar() {
               <li><a href="#" className="hover:text-green-500">Home</a></li>
               <li><a href="#" className="hover:text-green-500">Features</a></li>
               <li><a href="#" className="hover:text-green-500">Community</a></li>
-              <li><a href="#" className="hover:text-green-500">Blog</a></li>
+              <li>
+                  <Link to="/blog" className="hover:text-green-500">
+                    Blog
+                  </Link></li>
               <li><a href="#" className="hover:text-green-500">Pricing</a></li>
             </ul>
 
