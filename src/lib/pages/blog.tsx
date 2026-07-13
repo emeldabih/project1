@@ -1,67 +1,60 @@
-import { SidebarProvider } from '@/components/ui/sidebar';
-import header from './header'
-import sidebar from'./sidebar'
+import DashboardSidebar from "./Dashboardsidebar";
+import Header from "./header";
+import Statistics from "./Statistics";
+import Inbox from "./inbox";
+import Activity from "./Activity";
+import Barchat from "./barchat";
+import {
+  SidebarProvider,
+  SidebarInset,
+} from "@/components/ui/sidebar";
 
-
-export default function blog() {
-  
-    
-   
+export default function Blog() {
   return (
     <SidebarProvider>
-    
-    <div className="flex min-h-screen">
+      {/* Sidebar */}
+      <DashboardSidebar />
 
-      {/* SIDEBAR DIV */}
-      <div className="w-64 border-r bg-gray-100 p-6">
-        <h2 className="text-2xl font-bold">Sidebar</h2>
-      </div>
+      {/* Main Content */}
+      <SidebarInset className="min-h-screen bg-gray-100">
 
-      {/*  MAIN CONTENT DIV */}
-      <div className="flex-1 p-6">
+        {/* Header Component */}
+        <Header />
 
-        {/* HEADER DIV */}
-        <div className="mb-6 rounded-lg border p-6">
-          <h1 className="text-2xl font-bold">Header</h1>
-        </div>
+        <div className="p-4 md:p-6">
 
-        {/*  STATISTICS DIV */}
-        <div className="mb-6 rounded-lg border p-6">
-          <h2 className="text-xl font-semibold">Statistics</h2>
-        </div>
+          {/* Statistics */}
+         <div className="mb-6">
+          <Statistics/>
+         </div>
+          {/* Bottom Section */}
+          <div className="grid grid-cols-1 gap-6 lg:grid-cols-3">
 
-        {/*  BOTTOM SECTION DIV  */}
-        <div className="grid grid-cols-3 gap-6">
+            {/* Left Section */}
+            <div className="space-y-6 lg:col-span-2">
 
-          {/*  LEFT COLUMN DIV */}
-          <div className="col-span-2 space-y-6">
+              {/* Inbox */}
+              <div className="rounded-xl border bg-white p-6 shadow-sm">
+               <Inbox/>
+              </div>
 
-            {/* Inbox Div */}
-            <div className="rounded-lg border p-6">
-              <h2 className="text-lg font-semibold">Inbox</h2>
+              {/* Activity */}
+              <div className="rounded-xl border bg-white p-6 shadow-sm">
+                <Activity/>
+              </div>
+
             </div>
 
-            {/* Activity Div */}
-            <div className="rounded-lg border p-6">
-              <h2 className="text-lg font-semibold">Activity</h2>
+            {/* Right Section */}
+            <div className="rounded-xl border bg-white p-6 shadow-sm">
+              <Barchat/>
             </div>
 
           </div>
 
-          {/*  RIGHT COLUMN DIV  */}
-          <div className="rounded-lg border p-6">
-            <h2 className="text-lg font-semibold">Today's Trends</h2>
-          </div>
-
         </div>
 
-      </div>
-
-    </div>
+      </SidebarInset>
     </SidebarProvider>
   );
 }
-
-
-  
-
