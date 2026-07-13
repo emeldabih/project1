@@ -8,7 +8,7 @@ export default function Hero1() {
  
   return (
     <section className="bg-gray-100 w-full px-6 md:px-10 lg:px-16 py-12 md:py-16 lg:py-20">
-      <div className="flex items-center justify-between gap-8">
+      <div className="flex justify-between gap-8 items-center">
 
         
         {/* <div className="flex flex-col max-w-xl">

@@ -22,6 +22,19 @@ const chartConfig =  {
   },
 } satisfies ChartConfig
   return (
+    <>
+    <div className="flex justify-between items-center mb-40">
+    <div>
+      <h2 className="font-bold text-1xl">Todays's trends</h2>
+      <p>30 sept 2021</p>
+    </div>
+    <div>
+      <h3 className="text-sm ml-10">
+        --Today--Yesterday
+      </h3>
+    </div>
+    </div>
+    
  <ChartContainer config={chartConfig} className='min-h-[200px] w-full'>
   <BarChart accessibilityLayer data = {chartData}>
     <CartesianGrid vertical={false}/>
@@ -36,5 +49,6 @@ const chartConfig =  {
 
   </BarChart>
  </ChartContainer>
+ </>
   )
 }
