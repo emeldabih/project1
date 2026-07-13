@@ -2,8 +2,8 @@ import {
   Truck,
   ShoppingCart,
   Package,
-  TrendingDown,
-  TrendingUp,
+  
+  
 } from "lucide-react";
 
 export default function Statistics() {

@@ -6,7 +6,7 @@
   SidebarMenu,
   SidebarMenuButton,
   SidebarMenuItem,
-  SidebarProvider
+  
 } from "@/components/ui/sidebar";
 import { Button } from "@/components/ui/button";
 import {
@@ -16,7 +16,7 @@ import {
   Truck,
   CreditCard,
   Settings,
-  Headset,
+  
   Power,
 } from "lucide-react";
 

@@ -1,4 +1,4 @@
-import { ChevronRight } from "lucide-react";
+
 
 export default function Inbox() {
   return (
