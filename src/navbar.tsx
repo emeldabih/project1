@@ -10,7 +10,7 @@ export default function Navbar() {
 
   return (
     <>
-      <div className="bg-white shadow-sm fixed w-full">
+      <div className="bg-white shadow-sm z-50  fixed w-full mb-10">
         <div className="flex justify-between items-center px-6 md:px-10 lg:px-16 py-5">
 
           
@@ -33,7 +33,7 @@ export default function Navbar() {
           </Button>
 
           
-          <div className="hidden md:flex items-center gap-6">
+          <div className="hidden md:flex items-center gap-6 ">
             <ul className="flex gap-6">
               <li><a href="#" className="hover:text-green-500">Home</a></li>
               <li><a href="#" className="hover:text-green-500">Features</a></li>
@@ -57,7 +57,7 @@ export default function Navbar() {
 
        
         {isOpen && (
-          <div className="md:hidden px-6 pb-5">
+          <div className="md:hidden px-6 pb-5 ">
             <ul className="flex flex-col gap-4">
               <li><a href="#" className="hover:text-green-500">Home</a></li>
               <li><a href="#" className="hover:text-green-500">Features</a></li>
